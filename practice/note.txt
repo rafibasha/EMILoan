@@ -1,0 +1,27 @@
+What are the react Hooks
+1. useState
+2. useEffect
+3. useContext
+4. useReducer
+5. useCallback
+6. useMemo
+7.useRef
+8.useImperativeHandle
+9.useLayoutEffect
+10.useReducer
+11.useDebounce
+12.usePrevious
+
+
+useState: Manages local state in functional components.
+useEffect: Handles side effects in components.
+useContext: Accesses context values.
+useReducer: Manages more complex state logic.
+useCallback: Memoizes callback functions.
+useMemo: Memoizes computed values.
+useRef: For accessing DOM elements and persisting mutable values.
+useImperativeHandle: Customizes the instance value exposed by ref.
+useLayoutEffect: For reading layout and making synchronous changes.
+useReducer: For managing complex state logic.
+useDebounce: Delays state updates for handling expensive operations.
+usePrevious: Captures the previous value of a state or prop.
