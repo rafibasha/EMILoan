@@ -6,9 +6,6 @@ const Counter = () => {
 function getdata(){
   console.log('getdata')
 }
-function getdata(){
-  console.log('getdata')
-}
   return (
     <View>
       <Text>Count: {count}</Text>
