@@ -3,9 +3,6 @@ import { View, Text, Button } from 'react-native';
 
 const Counter = () => {
   const [count, setCount] = useState(0);
-function getdata(){
-  console.log('getdata')
-}
   return (
     <View>
       <Text>Count: {count}</Text>
