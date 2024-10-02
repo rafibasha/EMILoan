@@ -13,15 +13,17 @@ import UseMemoExample from './practice/ex_usememo';
 import PreviousValueExample from './practice/ex_useprevious';
 import DebounceExample from './practice/ex_usedebounce';
 import LayoutEffectExample from './practice/ex_uselayouteffect';
+import Header from './Components/Header';
 
-
+import Homeredux from './Homeredux';
 const Stack = createNativeStackNavigator();
 
 function App() {
   return (
+   
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={LayoutEffectExample} options={{ title: 'Overview' }}/>
+        <Stack.Screen name="Home" component={Homeredux} options={{ title: 'Overview' }}/>
         <Stack.Screen name="Details" component={DetailScreen} />
       </Stack.Navigator>
     </NavigationContainer>

@@ -1,16 +1,21 @@
-import React, { Component } from 'react';
-import { View, Text,Button,StyleSheet } from 'react-native';
+import React, {useEffect} from 'react';
+import {View, Text} from 'react-native';
+import {getUserList} from './redux/action';
+import {useDispatch, useSelector} from 'react-redux';
+function DetailScreen() {
+  const dispatch = useDispatch();
+  const userlists = useSelector(state => state.reducer);
 
-  
-  function DetailScreen({ navigation }) {
-    return (
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Details Screen</Text>
-        
-      </View>
-    );
-  }
-  const styles = StyleSheet.create({
-    main_view: { alignItems: 'center', justifyContent: 'center' ,backgroundColor:'#8570C6',height: '50%'}})
+  useEffect(() => {
+    dispatch(getUserList());
+  }, [dispatch]);
+  console.warn('innn', userlists);
+  return (
+    // eslint-disable-next-line react-native/no-inline-styles
+    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+      <Text>Details Screen</Text>
+    </View>
+  );
+}
 
 export default DetailScreen;

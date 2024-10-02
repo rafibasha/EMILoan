@@ -25,3 +25,9 @@ useLayoutEffect: For reading layout and making synchronous changes.
 useReducer: For managing complex state logic.
 useDebounce: Delays state updates for handling expensive operations.
 usePrevious: Captures the previous value of a state or prop.
+
+
+Redux tookit: it is state management tool which helps to manage application states and data flow in an app.
+Redux saga: It is asynchronous side effect library that allows us to handle complex async logic in our React apps.
+
+
