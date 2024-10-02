@@ -1,4 +1,4 @@
-import { ADD_TO_CART , REMOVE_FROM_CART} from "./constants";
+import { ADD_TO_CART , REMOVE_FROM_CART,GET_ALL_USERS} from "./constants";
 const initialState = [];
 export const reducer =(state = initialState, action)=>{
  switch(action.type){
@@ -10,6 +10,9 @@ export const reducer =(state = initialState, action)=>{
      return item.name !== action.data
     })
    return [...result]
+   case GET_ALL_USERS :
+    console.log("reducer",action)
+    return [...state,action.data]
   default :
     return state
  }
