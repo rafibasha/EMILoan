@@ -2,14 +2,10 @@ import React, {Component} from 'react';
 import {View, Text, Button, StyleSheet, ScrollView} from 'react-native';
 //import AppButton from'./Components/appbutton';
 import {addToCart} from './redux/action';
-import {useDispatch} from 'react-redux';
+
 import Header from './Components/Header';
 import Product from './Components/Product';
 const Homeredux = ({navigation}) => {
-  const handleAddtoCart = item => {
-    console.warn('called', item);
-  };
-  const dispatch = useDispatch();
   const products = [
     {
       name: 'iphone',
